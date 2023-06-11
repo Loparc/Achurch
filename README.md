@@ -29,12 +29,13 @@ cd Achurch
 
 3. Install the dependencies using pip:
 
-   For the terminal version & Telegram bot
+### For the terminal version & Telegram bot
+
 pip install antlr4-tools
 
 pip install antlr4-python3-runtime
 
-   For Telegram bot
+### For Telegram bot
 
 pip install python-telegram-bot
 
