@@ -271,7 +271,7 @@ while True:
             case True:
                 # imprimim la llista de macros
                 for i in llista_macros:
-                    print(i + '≡' + getArbol(llista_macros[i]))
+                    print(i + " ≡ " + getArbol(llista_macros[i]))
 
             # cas d'analisi d'una expressió
             case _:

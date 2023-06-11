@@ -35,7 +35,7 @@ class Applicacion:
 
 
 Arbre = Variable | Abstraccion | Applicacion
-# llista de "print" que es faran a la funció Main un cop s'acabi l'execució d'una instrucció
+# llista de "print" que es faran a la funció Main un cop s'acabi l'execució d'una instrucció.
 # s'han eliminat els prints a les funcions, i es fa només un append del que s'hauria d'imprimir,
 # per tal de no haver de passar context i update a cada funció
 pasos = []
@@ -412,7 +412,7 @@ def author(update, context):
 # defineix una funció que mostra la llista de comandes i que s'executarà quan el bot rebi el missatge /help
 def help2(update, context):
     context.bot.send_message(chat_id=update.message.chat_id,
-                             text="/start - missatge introductori\n/author - veure autor\n/help - llista de comandes\n/macros - taula de macros definides\n/clear - esborrar macros\nλ-Expression Analisis")
+                             text="/start - missatge introductori\n/author - veure autor\n/help - llista de comandes\n/macros - taula de macros definides\n/clear - esborrar macros\nλ-Expression Analisis\nAssignar Macro")
 
 
 # defineix una funció que llista les macros definides i que s'executarà quan el bot rebi el missatge /macros
@@ -420,6 +420,8 @@ def macros(update, context):
     if len(llista_macros) == 0:
         context.bot.send_message(chat_id=update.message.chat_id,
                                  text="Oops! Sembla que no hi ha cap macro definida de moment")
+        context.bot.send_message(chat_id=update.message.chat_id,
+                                 text="Pista: NOM_MACRO = TERME per definir-ne una")
     else:
         for i in llista_macros:
             context.bot.send_message(
