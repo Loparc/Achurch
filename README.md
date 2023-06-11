@@ -30,18 +30,18 @@ cd Achurch
 3. Install the dependencies using pip:
 
 - For the terminal version & Telegram bot
--> pip install antlr4-tools
--> pip install antlr4-python3-runtime
+pip install antlr4-tools
+pip install antlr4-python3-runtime
 
 - For Telegram bot
--> pip install python-telegram-bot
--> pip install pydot
--> sudo apt install graphviz
+pip install python-telegram-bot
+pip install pydot
+sudo apt install graphviz
 
 
 # Usage
 
-0. For both versions you need to, first of all, execute this commands on the Achurch directory:
+-> For both versions you need to, first of all, execute this commands on the Achurch directory:
 
 antlr4 -Dlanguage=Python3 -no-listener -visitor achurch.g4
 
