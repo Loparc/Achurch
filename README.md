@@ -31,11 +31,15 @@ cd Achurch
 
    For the terminal version & Telegram bot
 pip install antlr4-tools
+
 pip install antlr4-python3-runtime
 
    For Telegram bot
+
 pip install python-telegram-bot
+
 pip install pydot
+
 sudo apt install graphviz
 
 
