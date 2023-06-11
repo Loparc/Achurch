@@ -18,16 +18,16 @@ This project is a lambda calculus expression calculator that can be executed by 
 
 # Installation
 
-1. Clone this repository:
+## 1. Clone this repository:
 
    git clone https://github.com/Loparc/Achurch
 
 
-2. Navigate to the project directory:
+## 2. Navigate to the project directory:
 
 cd Achurch
 
-3. Install the dependencies using pip:
+## 3. Install the dependencies using pip:
 
 ### For the terminal version & Telegram bot
 
@@ -46,7 +46,7 @@ sudo apt install graphviz
 
 # Usage
 
-For both versions you need to, first of all, execute this commands on the Achurch directory:
+#### For both versions you need to, first of all, execute this commands on the Achurch directory:
 
 antlr4 -Dlanguage=Python3 -no-listener -visitor achurch.g4
 
