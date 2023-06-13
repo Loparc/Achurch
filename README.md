@@ -48,7 +48,7 @@ sudo apt install graphviz
 
 #### For both versions you need to, first of all, execute this commands on the Achurch directory:
 
-antlr4 -Dlanguage=Python3 -no-listener -visitor achurch.g4
+antlr4 -Dlanguage=Python3 -no-listener -visitor lc.g4
 
 ## Usage Terminal Version
 

@@ -1,8 +1,8 @@
 from __future__ import annotations
 from antlr4 import *
-from achurchLexer import achurchLexer
-from achurchParser import achurchParser
-from achurchVisitor import achurchVisitor
+from lcLexer import lcLexer
+from lcParser import lcParser
+from lcVisitor import lcVisitor
 from dataclasses import dataclass
 import string
 
@@ -203,7 +203,7 @@ def needAlfa(a: Arbre) -> Arbre:
 
 
 # visitador de l'arbre
-class TreeVisitor(achurchVisitor):
+class TreeVisitor(lcVisitor):
 
     def visitRoot(self, ctx):
         a = self.visitChildren(ctx)
@@ -323,9 +323,9 @@ def crea_imatge(a: Arbre):
 # funció Main, s'execute per defecte si no s'executa cap comanda definida
 def Main(update, context):
     input_stream = InputStream(update.message.text)
-    lexer = achurchLexer(input_stream)
+    lexer = lcLexer(input_stream)
     token_stream = CommonTokenStream(lexer)
-    parser = achurchParser(token_stream)
+    parser = lcParser(token_stream)
     tree = parser.root()
 
     if parser.getNumberOfSyntaxErrors() == 0:
